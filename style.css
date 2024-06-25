@@ -1,21 +1,28 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Elegant font */
     margin: 0;
     padding: 0;
+    text-align: center;
+    background-color: #f8f8f8; /* Light grey background */
+    color: #5d4c39; /* Light brown text */
 }
 
+/* Navigation Button Styles */
 .navbutton {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #ffd3e6; /* Lighter pink background */
     padding: 10px 20px;
 }
 
 .navbutton .brand {
-    color: white;
+    color: #5d4c39; /* Light brown text */
+    background-color: #ffd3e6; /* Lighter pink */
     text-decoration: none;
     font-size: 24px; /* Increased font size */
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .navbutton .nav-links {
@@ -23,7 +30,7 @@ body {
 }
 
 .navbutton .nav-links a {
-    color: white;
+    color: #5d4c39; /* Light brown text */
     text-decoration: none;
     font-size: 24px; /* Increased font size */
     margin-left: 20px;
@@ -33,27 +40,32 @@ body {
     text-decoration: underline;
 }
 
-body {
+/* Text Alignment */
+body, h1 {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Elegant font */
 }
 
 img {
     display: block;
     margin: 0 auto;
+    border: 5px solid #ffd3e6; /* Lighter pink border */
+    padding: 5px; /* Add padding for border space */
+    border-radius: 8px; /* Rounded border */
 }
 
 h1 {
     margin-top: 20px;
 }
 
+/* Paragraph Styles */
 p {
     margin: 20px auto;
     width: 80%;
     max-width: 600px;
 }
 
-
+/* Full Height for Flexbox */
 html, body {
     height: 100%;
     margin: 0;
@@ -71,13 +83,9 @@ html, body {
     flex: 1;
 }
 
-body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-
+/* Navigation Styles */
 nav {
-    background-color: #f8f8f8;
+    background-color: #ffd3e6; /* Lighter pink */
     padding: 10px;
     text-align: center;
 }
@@ -85,24 +93,15 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #333;
+    color: #5d4c39; /* Light brown text */
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #007BFF;
+    color: #ff99b3; /* Lighter pink on hover */
 }
 
-h1 {
-    margin-top: 20px;
-}
-
-p {
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-}
-
+/* Bouquet Container Styles */
 .bouquet-container {
     display: flex;
     justify-content: center;
@@ -115,7 +114,7 @@ p {
 }
 
 .bouquet img {
-    width: 200px;
+    width: 350px; /* Larger size for bouquet images */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -130,9 +129,7 @@ p {
     font-weight: bold;
 }
 
-
-
-
+/* Plant Container Styles */
 .plant-container {
     display: flex;
     justify-content: center;
@@ -143,7 +140,6 @@ p {
 
 .plants {
     text-align: center;
-    background-color: #fff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -155,25 +151,26 @@ p {
     height: auto;
     display: block;
     margin: 0 auto 10px;
-    border-radius: 5px;
+    border-radius: 8px; /* Rounded border */
+    border: 5px solid #ffd3e6; /* Lighter pink border */
+    padding: 5px; /* Add padding for border space */
 }
 
 .plants h2 {
     margin: 10px 0 5px;
-    color: #333;
+    color: #5d4c39; /* Light brown text */
 }
 
 .plants p {
     margin: 0;
     font-weight: bold;
-    color: #666;
+    color: #888; /* Lighter text */
 }
 
-
-
+/* Footer Styles */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #ffd3e6; /* Lighter pink */
+    color: #5d4c39; /* Light brown text */
     text-align: center;
     padding: 10px 0;
 }
@@ -191,24 +188,22 @@ footer {
 }
 
 .footer-links a {
-    color: white;
+    color: #5d4c39; /* Light brown text */
     text-decoration: none;
-    font-size: 24
-    
-    
-    px;
+    font-size: 24px;
 }
 
 .footer-links a:hover {
     text-decoration: underline;
 }
 
-
-
-#mainpic {margin-top: 20px;
+/* Main Image Styles */
+#mainpic {
+    margin-top: 20px;
 }
-.brand {color: white;
-background-color: #1b1e18;
 
-
+/* Brand Styles */
+.brand {
+    color: #ffd3e6; /* Lighter pink */
+    background-color: #5d4c39; /* Dark brown background */
 }

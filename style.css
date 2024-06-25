@@ -1,29 +1,17 @@
-/* Navigation Button Styles */
+
 .navbutton {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffd3e6; /* Lighter pink background */
+    background-color: #ffd3e6; 
     padding: 10px 20px;
-    animation: slideInDown 1s ease-out; /* Slide in animation */
-}
-
-@keyframes slideInDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+    animation: slideInDown ease-out; 
 }
 
 .navbutton .brand {
-    color: #5d4c39; /* Light brown text */
-    background-color: #ffd3e6; /* Lighter pink */
-    text-decoration: none;
-    font-size: 24px; /* Increased font size */
+    color: #5d4c39; 
+    background-color: #ffd3e6; 
+    font-size: 24px; 
     padding: 5px 10px;
     border-radius: 5px;
     display: flex;
@@ -35,40 +23,37 @@
 }
 
 .navbutton .nav-links a {
-    color: #5d4c39; /* Light brown text */
-    text-decoration: none;
-    font-size: 24px; /* Increased font size */
+    color: #5d4c39; 
+    font-size: 24px;
     margin-left: 20px;
     display: flex;
     align-items: center;
-    transition: color 0.3s ease;
 }
 
 .navbutton .nav-links a i {
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 8px; 
 }
 
 .navbutton .nav-links a:hover {
     text-decoration: underline;
-    color: #8c6239; /* Slightly darker brown */
+    color: #8c6239; 
 }
 
 /* Text Alignment */
 body, h1, p {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Elegant font */
-    color: #5d4c39; /* Light brown text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #5d4c39; 
 }
 
 img {
     display: block;
     margin: 0 auto;
-    border: 5px solid #ffd3e6; /* Lighter pink border */
-    padding: 5px; /* Add padding for border space */
-    border-radius: 8px; /* Rounded border */
+    border: 5px solid #ffd3e6; 
+    padding: 5px; 
+    border-radius: 8px; 
 }
 
-/* Plant Container Styles */
 .plant-container {
     display: flex;
     justify-content: center;
@@ -81,38 +66,31 @@ img {
     text-align: center;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 250px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.plants:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
 .plants img {
-    width: 200px; /* Medium size for plant images */
+    width: 200px; 
     height: auto;
     display: block;
     margin: 0 auto 10px;
-    border-radius: 8px; /* Rounded border */
-    border: 5px solid #ffd3e6; /* Lighter pink border */
-    padding: 5px; /* Add padding for border space */
+    border-radius: 8px; 
+    border: 5px solid #ffd3e6; 
+    padding: 5px; 
 }
 
 .plants h2 {
     margin: 10px 0 5px;
-    color: #5d4c39; /* Light brown text */
+    color: #5d4c39; 
 }
 
 .plants p {
     margin: 0;
     font-weight: bold;
-    color: #888; /* Lighter text */
+    color: #888; 
 }
 
-/* Bouquet Container Styles */
 .bouquet-container {
     display: flex;
     justify-content: center;
@@ -124,12 +102,6 @@ img {
     text-align: center;
     flex: 1;
     max-width: 300px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.bouquet:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .bouquet img {
@@ -137,24 +109,11 @@ img {
     height: auto;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #ffd3e6; /* Lighter pink */
-    color: #5d4c39; /* Light brown text */
+    background-color: #ffd3e6; 
+    color: #5d4c39; 
     text-align: center;
-    padding: 10px 0;
-    animation: slideInUp 1s ease-out; /* Slide in animation */
-}
-
-@keyframes slideInUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+    padding: 20px 0;
 }
 
 .footer-links {
@@ -165,32 +124,16 @@ footer {
     justify-content: center;
 }
 
-.footer-links li {
-    margin: 0 15px;
-}
-
 .footer-links a {
-    color: #5d4c39; /* Light brown text */
+    color: #5d4c39; 
     text-decoration: none;
     font-size: 24px;
-    display: flex;
-    align-items: center;
     transition: color 0.3s ease;
+    margin-right: 20px; 
 }
 
 .footer-links a:hover {
     text-decoration: underline;
-    color: #8c6239; /* Slightly darker brown */
-}
-
-/* Main Image Styles */
-#mainpic {
-    margin-top: 20px;
-}
-
-/* Brand Styles */
-.brand {
-    color: #ffd3e6; /* Lighter pink */
-    background-color: #5d4c39; /* Dark brown background */
+    color: #8c6239; 
 }
 

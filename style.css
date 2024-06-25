@@ -1,12 +1,3 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Elegant font */
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #f8f8f8; /* Light grey background */
-    color: #5d4c39; /* Light brown text */
-}
-
 /* Navigation Button Styles */
 .navbutton {
     display: flex;
@@ -34,6 +25,12 @@ body {
     text-decoration: none;
     font-size: 24px; /* Increased font size */
     margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbutton .nav-links a i {
+    margin-right: 8px; /* Space between icon and text */
 }
 
 .navbutton .nav-links a:hover {
@@ -83,24 +80,6 @@ html, body {
     flex: 1;
 }
 
-/* Navigation Styles */
-nav {
-    background-color: #ffd3e6; /* Lighter pink */
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #5d4c39; /* Light brown text */
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #ff99b3; /* Lighter pink on hover */
-}
-
 /* Bouquet Container Styles */
 .bouquet-container {
     display: flex;
@@ -111,31 +90,22 @@ nav a:hover {
 
 .bouquet {
     text-align: center;
+    flex: 1;
+    max-width: 300px;
 }
 
 .bouquet img {
-    width: 350px; /* Larger size for bouquet images */
+    width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.bouquet h2 {
-    margin: 10px 0 5px;
-}
-
-.bouquet p {
-    margin: 0;
-    font-weight: bold;
 }
 
 /* Plant Container Styles */
 .plant-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 20px;
-    flex-wrap: wrap;
     margin: 20px 0;
+    align-items: center;
 }
 
 .plants {
@@ -147,7 +117,7 @@ nav a:hover {
 }
 
 .plants img {
-    width: 200px;
+    width: 200px; /* Medium size for plant images */
     height: auto;
     display: block;
     margin: 0 auto 10px;
@@ -191,11 +161,18 @@ footer {
     color: #5d4c39; /* Light brown text */
     text-decoration: none;
     font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a i {
+    margin-right: 8px; /* Space between icon and text */
 }
 
 .footer-links a:hover {
     text-decoration: underline;
 }
+
 
 /* Main Image Styles */
 #mainpic {
@@ -207,3 +184,4 @@ footer {
     color: #ffd3e6; /* Lighter pink */
     background-color: #5d4c39; /* Dark brown background */
 }
+

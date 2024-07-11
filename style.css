@@ -3,19 +3,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffd3e6; 
+    background-color: #ffd3e6;
     padding: 10px 20px;
-    animation: slideInDown ease-out; 
+    animation: slideInDown 0.5s ease-out;
 }
 
 .navbutton .brand {
-    color: #5d4c39; 
-    background-color: #ffd3e6; 
-    font-size: 24px; 
+    color: #5d4c39;
+    background-color: #ffd3e6;
+    font-size: 24px;
     padding: 5px 10px;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    animation: pulse 2s infinite;
 }
 
 .navbutton .nav-links {
@@ -23,35 +24,59 @@
 }
 
 .navbutton .nav-links a {
-    color: #5d4c39; 
+    color: #5d4c39;
     font-size: 24px;
     margin-left: 20px;
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+.navbutton .nav-links a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #8c6239;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navbutton .nav-links a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .navbutton .nav-links a i {
-    margin-right: 8px; 
+    margin-right: 8px;
 }
 
 .navbutton .nav-links a:hover {
-    text-decoration: underline;
-    color: #8c6239; 
+    color: #8c6239;
 }
 
-/* Text Alignment */
+.navbutton .nav-links a:active {
+    animation: shake 0.5s;
+}
+
+
 body, h1, p {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    color: #5d4c39; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #5d4c39;
 }
 
 img {
     display: block;
     margin: 0 auto;
-    border: 5px solid #ffd3e6; 
-    padding: 5px; 
-    border-radius: 8px; 
+    border: 5px solid #ffd3e6;
+    padding: 5px;
+    border-radius: 8px;
 }
 
 .plant-container {
@@ -71,24 +96,24 @@ img {
 }
 
 .plants img {
-    width: 200px; 
+    width: 200px;
     height: auto;
     display: block;
     margin: 0 auto 10px;
-    border-radius: 8px; 
-    border: 5px solid #ffd3e6; 
-    padding: 5px; 
+    border-radius: 8px;
+    border: 5px solid #ffd3e6;
+    padding: 5px;
 }
 
 .plants h2 {
     margin: 10px 0 5px;
-    color: #5d4c39; 
+    color: #5d4c39;
 }
 
 .plants p {
     margin: 0;
     font-weight: bold;
-    color: #888; 
+    color: #888;
 }
 
 .bouquet-container {
@@ -110,8 +135,8 @@ img {
 }
 
 footer {
-    background-color: #ffd3e6; 
-    color: #5d4c39; 
+    background-color: #ffd3e6;
+    color: #5d4c39;
     text-align: center;
     padding: 20px 0;
 }
@@ -125,15 +150,50 @@ footer {
 }
 
 .footer-links a {
-    color: #5d4c39; 
+    color: #5d4c39;
     text-decoration: none;
     font-size: 24px;
     transition: color 0.3s ease;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .footer-links a:hover {
     text-decoration: underline;
-    color: #8c6239; 
+    color: #8c6239;
 }
 
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
